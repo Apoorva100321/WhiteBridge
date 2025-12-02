@@ -27,9 +27,10 @@ export default function Home() {
       {/* <About /> */}
       <ReportCard />
       <Project />
+      <Testimonial />
       <WorldMapPage4/>
 
-      <Testimonial />
+      
       <WorkWithUs />
       {/* <Service /> */}
       {/* <Markets /> */}

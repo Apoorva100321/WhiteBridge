@@ -255,22 +255,13 @@ export default function HeroPremium() {
               >
                 <h1 className="font-bold text-4xl md:text-5xl lg:text-[2.85rem] xl:text-[3.25rem] 2xl:text-6xl leading-[1.08] tracking-[-0.02em]">
                   <span className="block text-white/95">
-                    Built on{" "}
-                    <span className="relative inline-block">
-                      <span className="bg-gradient-to-r from-[#cd553b] via-[#e8836c] to-[#cd553b] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_ease-in-out_infinite]">
-                        ethics
-                      </span>
-                      <span className="text-[#cd553b]">.</span>
-                    </span>
+                    Built on ethics.
+                    
+                    
                   </span>
                   <span className="block text-white/95 mt-1">
-                    Powered by{" "}
-                    <span className="relative inline-block">
-                      <span className="bg-gradient-to-r from-[#92bec0] via-[#b8d4d5] to-[#92bec0] bg-clip-text text-transparent bg-[length:200%_auto] animate-[shimmer_3s_ease-in-out_infinite_0.5s]">
-                        data
-                      </span>
-                      <span className="text-[#92bec0]">.</span>
-                    </span>
+                    Powered by data.
+                    
                   </span>
                   <span className="block text-white/95 mt-1">
                     Committed to{" "}

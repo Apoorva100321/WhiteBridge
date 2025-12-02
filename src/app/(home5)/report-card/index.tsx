@@ -10,7 +10,7 @@ export default function ReportCard() {
   const reports = [
     {
       id: 1,
-      title: "Annual Education Report 2024",
+      title: "MiddleEast Report",
       description: "Comprehensive analysis of global education trends, market insights, and student enrollment data for South Asia and the Middle East.",
       date: "January 2024",
       type: "PDF",
@@ -50,7 +50,7 @@ export default function ReportCard() {
     },
     {
       id: 5,
-      title: "Partnership Development Guide",
+      title: "Evolving Trends In India",
       description: "Best practices for building strategic partnerships with educational institutions worldwide.",
       date: "September 2023",
       type: "PDF",
