@@ -1,0 +1,49 @@
+{
+  "name": "template-2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@tabler/icons-react": "^3.35.0",
+    "aos": "^2.3.4",
+    "clsx": "^2.1.1",
+    "cobe": "^0.6.5",
+    "d3-geo": "^3.1.1",
+    "dotted-map": "^2.2.3",
+    "framer-motion": "^12.23.24",
+    "fslightbox-react": "^1.7.6",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
+    "lucide-react": "^0.555.0",
+    "motion": "^12.23.24",
+    "next": "16.0.1",
+    "next-themes": "^0.4.6",
+    "react": "19.2.0",
+    "react-animated-progress-bar": "^1.1.2",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.0",
+    "react-globe.gl": "^2.37.0",
+    "react-icons": "^5.3.0",
+    "swiper": "^11.1.7",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.181.2"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "babel-plugin-react-compiler": "1.0.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5"
+  }
+}
