@@ -1225,91 +1225,83 @@
 //     </div>
 //   );
 // }
-
 "use client";
 import { WorldMap } from "@/components/map";
-export default function WorldMapPage4() {
+export default function WorldMapMain() {
   return (
-    <div className="pt-12 sm:pt-16 md:pt-20 pb-4 md:pb-6 bg-white w-full">
-      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="mb-4 text-left">
-          <h2 className="font-FiraSans font-bold text-3xl sm:text-4xl md:text-5xl text-HeadingColor-0 mb-4">
-            <span className="text-PrimaryColor-0">Regions</span> We Serve
-          </h2>
+    <div className="py-4 md:py-6 bg-white w-full">
+      <div className="container mx-auto px-6">
+        <div className="mb-4 text-center">
+          <h4 className="text-gray-900 font-bold text-xl md:text-2xl lg:text-3xl">
+            Markets/Regions we serve
+          </h4>
         </div>
         <div className="w-full">
           <WorldMap
             dots={[
+              // 1. India to Middle East
               {
                 start: {
-                  lat: 64.2008,
-                  lng: -149.4937,
-                  label: "Fairbanks",
+                  lat: 8.0,
+                  lng: 80.0,
+                  label: "India",
                 },
                 end: {
-                  lat: 34.0522,
-                  lng: -118.2437,
-                  label: "Los Angeles",
+                  lat: 6.0,
+                  lng: 47.0,
+                  label: "Middle East",
                 },
               },
+              // 2. Middle East to Africa
               {
                 start: {
-                  lat: 64.2008,
-                  lng: -149.4937,
-                  label: "Fairbanks",
+                  lat: 6.0,
+                  lng: 47.0,
+                  label: "",
                 },
                 end: {
-                  lat: -15.7975,
-                  lng: -47.8919,
-                  label: "Brasília",
+                  lat: -11.0,
+                  lng: 18.2812,
+                  label: "Africa",
                 },
               },
+              // 3. India to Bangladesh
               {
                 start: {
-                  lat: -15.7975,
-                  lng: -47.8919,
-                  label: "Brasília",
+                  lat: 8.0,
+                  lng: 80.0,
+                  label: "",
                 },
                 end: {
-                  lat: 38.7223,
-                  lng: -9.1393,
-                  label: "Lisbon",
+                  lat: 18.0,
+                  lng: 95.0,
+                  label: "Bangladesh",
                 },
               },
+              // 4. India to Sri Lanka
               {
                 start: {
-                  lat: 51.5074,
-                  lng: -0.1278,
-                  label: "London",
+                  lat: 8.0,
+                  lng: 80.0,
+                  label: "",
                 },
                 end: {
-                  lat: 28.6139,
-                  lng: 77.209,
-                  label: "New Delhi",
+                  lat: -7.0,
+                  lng: 85.0,
+                  label: "Sri Lanka",
                 },
               },
+              // 5. Middle East to Central Asia
               {
                 start: {
-                  lat: 28.6139,
-                  lng: 77.209,
-                  label: "New Delhi",
+                  lat: 6.0,
+                  lng: 47.0,
+                  label: "",
                 },
                 end: {
-                  lat: 43.1332,
-                  lng: 131.9113,
-                  label: "Vladivostok",
-                },
-              },
-              {
-                start: {
-                  lat: 28.6139,
-                  lng: 77.209,
-                  label: "New Delhi",
-                },
-                end: {
-                  lat: -1.2921,
-                  lng: 36.8219,
-                  label: "Nairobi",
+                  lat: 35.0,
+                  lng: 20.0,
+                  label: "Central Asia",
                 },
               },
             ]}
@@ -1319,3 +1311,96 @@ export default function WorldMapPage4() {
     </div>
   );
 }
+// "use client";
+// import { WorldMap } from "@/components/map";
+// export default function WorldMapPage4() {
+//   return (
+//     <div className="pt-12 sm:pt-16 md:pt-20 pb-4 md:pb-6 bg-white w-full">
+//       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+//         <div className="mb-4 text-left">
+//           <h2 className="font-FiraSans font-bold text-3xl sm:text-4xl md:text-5xl text-HeadingColor-0 mb-4">
+//             <span className="text-PrimaryColor-0">Regions</span> We Serve
+//           </h2>
+//         </div>
+//         <div className="w-full">
+//           <WorldMap
+//             dots={[
+//               {
+//                 start: {
+//                   lat: 64.2008,
+//                   lng: -149.4937,
+//                   label: "Fairbanks",
+//                 },
+//                 end: {
+//                   lat: 34.0522,
+//                   lng: -118.2437,
+//                   label: "Los Angeles",
+//                 },
+//               },
+//               {
+//                 start: {
+//                   lat: 64.2008,
+//                   lng: -149.4937,
+//                   label: "Fairbanks",
+//                 },
+//                 end: {
+//                   lat: -15.7975,
+//                   lng: -47.8919,
+//                   label: "Brasília",
+//                 },
+//               },
+//               {
+//                 start: {
+//                   lat: -15.7975,
+//                   lng: -47.8919,
+//                   label: "Brasília",
+//                 },
+//                 end: {
+//                   lat: 38.7223,
+//                   lng: -9.1393,
+//                   label: "Lisbon",
+//                 },
+//               },
+//               {
+//                 start: {
+//                   lat: 51.5074,
+//                   lng: -0.1278,
+//                   label: "London",
+//                 },
+//                 end: {
+//                   lat: 28.6139,
+//                   lng: 77.209,
+//                   label: "New Delhi",
+//                 },
+//               },
+//               {
+//                 start: {
+//                   lat: 28.6139,
+//                   lng: 77.209,
+//                   label: "New Delhi",
+//                 },
+//                 end: {
+//                   lat: 43.1332,
+//                   lng: 131.9113,
+//                   label: "Vladivostok",
+//                 },
+//               },
+//               {
+//                 start: {
+//                   lat: 28.6139,
+//                   lng: 77.209,
+//                   label: "New Delhi",
+//                 },
+//                 end: {
+//                   lat: -1.2921,
+//                   lng: 36.8219,
+//                   label: "Nairobi",
+//                 },
+//               },
+//             ]}
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

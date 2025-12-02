@@ -103,7 +103,7 @@ export default function Markets() {
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-left mb-8 sm:mb-12">
           <h2 className="font-FiraSans font-bold text-3xl sm:text-4xl md:text-5xl text-HeadingColor-0 mb-4">
-            Markets / Regions We Serve
+            Markets
           </h2>
           <p className="font-FiraSans text-base sm:text-lg text-gray-600 max-w-2xl">
             With deep expertise and established networks, we connect universities to exceptional students across South Asia and the Middle East.
