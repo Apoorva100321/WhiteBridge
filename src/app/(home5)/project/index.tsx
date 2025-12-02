@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Project() {
   const partnerLogos = [
@@ -8,10 +9,10 @@ export default function Project() {
     { id: 2, image: "/rowan.avif", alt: "Rowan University", link: "/clients/rowan" },
     { id: 3, image: "/lasalle.avif", alt: "La Salle University", link: "/clients/lasalle" },
     { id: 4, image: "/wake.avif", alt: "Wake Forest University", link: "/clients/wake" },
-    { id: 5, image: "/clarkson.avif", alt: "Clarkson University", link: "/clients/clarkson" },
-    { id: 6, image: "/rowan.avif", alt: "Rowan University", link: "/clients/rowan" },
-    { id: 7, image: "/lasalle.avif", alt: "La Salle University", link: "/clients/lasalle" },
-    { id: 8, image: "/wake.avif", alt: "Wake Forest University", link: "/clients/wake" },
+    { id: 5, image: "/sl.png", alt: "University of Salford", link: "/clients/Salford" },
+    { id: 6, image: "/bran.png", alt: "Brandeis University", link: "/clients/Brandeis" },
+    { id: 7, image: "/east.png", alt: "East Tennessee State University", link: "/clients/east" },
+    { id: 8, image: "/scar.png", alt: "Scranton University", link: "/clients/scranton" },
   ];
 
   return (
@@ -38,11 +39,19 @@ export default function Project() {
                 >
                   <div className="client-card-content">
                     <div className="client-logo-wrapper">
-                      <img
+                      <Image
                         src={logo.image}
                         alt={logo.alt}
+                        width={180}
+                        height={80}
                         className="auto-fit object-contain"
+                        style={{ width: 'auto', height: 'auto' }}
                         loading="lazy"
+                        unoptimized={logo.image.endsWith('.avif')}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                        }}
                       />
                     </div>
                     <Link href={logo.link || "#"} className="client-button">
@@ -59,11 +68,19 @@ export default function Project() {
                 >
                   <div className="client-card-content">
                     <div className="client-logo-wrapper">
-                      <img
+                      <Image
                         src={logo.image}
                         alt={logo.alt}
+                        width={180}
+                        height={80}
                         className="auto-fit object-contain"
+                        style={{ width: 'auto', height: 'auto' }}
                         loading="lazy"
+                        unoptimized={logo.image.endsWith('.avif')}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                        }}
                       />
                     </div>
                     <Link href={logo.link || "#"} className="client-button">
@@ -80,11 +97,19 @@ export default function Project() {
                 >
                   <div className="client-card-content">
                     <div className="client-logo-wrapper">
-                      <img
+                      <Image
                         src={logo.image}
                         alt={logo.alt}
+                        width={180}
+                        height={80}
                         className="auto-fit object-contain"
+                        style={{ width: 'auto', height: 'auto' }}
                         loading="lazy"
+                        unoptimized={logo.image.endsWith('.avif')}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                        }}
                       />
                     </div>
                     <Link href={logo.link || "#"} className="client-button">
@@ -178,13 +203,15 @@ export default function Project() {
           justify-content: center;
           height: 100px;
           width: 100%;
+          position: relative;
         }
 
         .auto-fit {
-          height: auto;
-          object-fit: contain;
+          height: auto !important;
+          width: auto !important;
           max-height: 80px;
-          width: auto;
+          max-width: 100%;
+          object-fit: contain;
           display: block;
           transition: transform 0.3s ease;
         }
